@@ -20,7 +20,6 @@
 
         <div class="comment-wrappper">
             <h3>Conversation</h3>
-            <hr>
 
             {% for message in room_messages %}
             <div>
@@ -29,7 +28,7 @@
                 {% endif %}
                 <small>@{{message.user}} {{message.created|timesince}} ago</small>
                 <p>{{message.body}}</p>
-                <hr>
+
             </div>
             {% endfor %}
         </div>
@@ -47,7 +46,6 @@
 
     <div>
         <h3>Participants</h3>
-        <hr>
 
         {% for user in participants %}
 
